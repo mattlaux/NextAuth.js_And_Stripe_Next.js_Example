@@ -20,7 +20,5 @@ const DB: DB = {
   PGPASSWORD: process.env.PGPASSWORD,
   PGPORT: pgPort,
 };
-const SESSION_SECRET = process.env.SESSION_SECRET;
-const STRIPE_SECRET_KEY = process.env.STRIPE_SECRET_KEY;
 
-export { DB, SESSION_SECRET, STRIPE_SECRET_KEY };
+export default DB;
