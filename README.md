@@ -1,8 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 # NextAuth.js and Stripe Next.js Example
 
-Typescript Next.js web application integrated with NextAuth.js and Stripe.
+Typescript Next.js web application integrated with NextAuth.js and Stripe detailed in [this guide](https://mattlaux/posts/settingUpNextAuth).
 
 ## Table of Contents
 
@@ -62,8 +60,6 @@ To learn more about Next.js, take a look at the following resources:
 - [Stripe Documentation](https://stripe.com/docs/api?lang=node)
 - [PostgreSQL Documentation](https://www.postgresql.org/docs/)
 - [Prisma Documentation](https://www.prisma.io/docs/)
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
 ## Inspiration
 
