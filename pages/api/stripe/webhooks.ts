@@ -74,25 +74,6 @@ const webhookHandler = async (req: NextApiRequest, res: NextApiResponse) => {
           isPro: true,
         },
       });
-    } else if (event.type === "customer.subscription.deleted") {
-      const subscription = event.data.object as Stripe.Subscription;
-      console.log(subscription.customer);
-      await prisma.user.update({
-        where: {
-          stripeCustomerId: subscription.customer as string,
-        },
-        data: {
-          isPro: false,
-        },
-      });
-    } else if (event.type === "customer.deleted") {
-      const deletedCustomer = event.data.object as Stripe.Customer;
-      console.log(deletedCustomer);
-      await prisma.user.delete({
-        where: {
-          stripeCustomerId: deletedCustomer.id as string,
-        },
-      });
     } else {
       console.warn(`🤷‍♀️ Unhandled event type: ${event.type}`);
     }
